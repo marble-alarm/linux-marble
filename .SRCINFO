@@ -1,0 +1,31 @@
+pkgbase = linux-marble
+	pkgdesc = Linux for Xiaomi POCO F5 / Redmi Note 12 Turbo
+	pkgver = 7.2.8.r1469610.c9f87aa
+	pkgrel = 1
+	url = https://github.com/iLtanaka/linux-marble
+	arch = aarch64
+	license = GPL-2.0-only
+	makedepends = bc
+	makedepends = clang
+	makedepends = cpio
+	makedepends = initramfs
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = llvm
+	makedepends = lld
+	makedepends = openssl
+	makedepends = pahole
+	makedepends = perl
+	makedepends = python
+	makedepends = xxhash
+	makedepends = zstd
+	options = !debug
+	options = !strip
+	source = linux-marble-c9f87aac17d306786d1d15f67d8bdd226770e27a.tar.gz::https://github.com/iLtanaka/linux-marble/archive/c9f87aac17d306786d1d15f67d8bdd226770e27a.tar.gz
+	source = config::https://raw.githubusercontent.com/iLtanaka/pmaports/7ed5ca661e40b381290dba4bb4c41c7312d41925/device/testing/linux-xiaomi-marble/config-xiaomi-marble.aarch64
+	sha256sums = f5df18b728f5ad23b57dc420197ec8b99f466ca48c061db49eaa62c5905e96e8
+	sha256sums = 47955958344f0073b9924afb1f3952e1f62300b4daab40b90f2827460c364375
+
+pkgname = linux-marble
+
+pkgname = linux-marble-headers
