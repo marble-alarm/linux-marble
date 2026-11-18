@@ -19,6 +19,11 @@ pkgbase = linux-marble
 	makedepends = python
 	makedepends = xxhash
 	makedepends = zstd
+	depends = coreutils
+	depends = initramfs
+	depends = kmod
+	optdepends = linux-firmware: firmware images needed for some devices
+	optdepends = linux-firmware-xiaomi-marble: firmware images needed for marble
 	options = !debug
 	options = !strip
 	source = linux-marble-c9f87aac17d306786d1d15f67d8bdd226770e27a.tar.gz::https://github.com/iLtanaka/linux-marble/archive/c9f87aac17d306786d1d15f67d8bdd226770e27a.tar.gz
@@ -27,5 +32,3 @@ pkgbase = linux-marble
 	sha256sums = 47955958344f0073b9924afb1f3952e1f62300b4daab40b90f2827460c364375
 
 pkgname = linux-marble
-
-pkgname = linux-marble-headers
